@@ -5,6 +5,7 @@ import proxyOptions from './proxyOptions'
 
 // https://vite.dev/config/
 export default defineConfig({
+  cacheDir: './node_modules/.vite',
   plugins: [react()],
   server: {
     port: 8080,
