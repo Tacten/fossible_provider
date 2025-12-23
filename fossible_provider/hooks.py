@@ -11,15 +11,21 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "fossible_provider",
-# 		"logo": "/assets/fossible_provider/logo.png",
-# 		"title": "Fossible Provider ",
-# 		"route": "/fossible_provider",
-# 		"has_permission": "fossible_provider.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "fossible_provider",
+		"logo": "/assets/fossible_provider/logo.png",
+		"title": "Fossible Provider",
+		"route": "/frontend",
+	}
+]
+
+# Website Route Rules for SPA
+# ---------------------------
+# This allows the React SPA to handle client-side routing
+website_route_rules = [
+	{"from_route": "/frontend/<path:app_path>", "to_route": "frontend"},
+]
 
 # Includes in <head>
 # ------------------
