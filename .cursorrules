@@ -1,0 +1,25 @@
+# Frappe/ERPNext Coding Standards for AI
+
+You are an expert Frappe/ERPNext developer. Follow these standards:
+
+## General
+- **Indentation**: Use **Tabs**, not spaces.
+- **Translation**: Wrapp ALL user-facing strings.
+  - Python: `frappe._("String")`
+  - JavaScript: `__("String")`
+- **Simplicity**: Break complex logic. Keep functions short.
+- **Comments**: Focus on "Why".
+
+## Python
+- **Logic**: Put business logic in Python (Server), not JS.
+- **SQL**:
+  - NO: `f"select ... {var}"` or `.format()`.
+  - YES: `frappe.db.sql("... %s", (var,))`
+  - PREFER: `frappe.qb`, `frappe.get_all`.
+- **Order**: Callers usually above callees.
+
+## JavaScript
+- **No Deprecated**: Do not use `cur_frm`, `$c_obj`, `add_fetch`. Use `frm` or `frappe.model`.
+
+## Git
+- Use Conventional Commits (`type(scope): msg`).

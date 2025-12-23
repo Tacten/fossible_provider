@@ -1,0 +1,35 @@
+# Task Checklist
+
+- [x] Research and Design
+    - [x] Read existing wiki docs
+    - [x] Analyze existing frontend structure
+    - [x] Create Implementation Plan (Design Proposal)
+    - [x] Create Detailed Task Breakdown
+    - [x] Create Linear Import CSV
+- [x] Implementation - Phase 1: Core Features
+    - [x] Foundation & API Layer
+        - [x] Setup Authentication (Basic via Hook)
+        - [x] Create `useFrappe` Hook
+        - [x] Type Definitions
+        - [x] Install React Router
+    - [x] Navigation & Layout
+        - [x] Setup Router in App.tsx
+        - [x] Refactor Sidebar
+        - [x] Header Updates (Sidebar)
+    - [x] Schedule Feature
+        - [x] Schedule View UI (Internal Mock)
+        - [x] Fetch Appointments (Connected to Hook)
+        - [ ] "Mark Unavailable" logic (Deferred)
+    - [x] Patient Encounter Feature
+        - [x] Encounter List View (Internal Mock)
+        - [x] Encounter Details Layout
+    - [x] Encounter Details Components
+        - [x] Patient History Pane (Medication, Vitals, Allergies)
+        - [x] Clinical Notes (SOAP) Editor
+        - [x] Save/Submit Logic (Mocked in UI)
+- [ ] Implementation - Phase 2: Offline & Sync (DEFERRED)
+    - [ ] Offline Infrastructure (IndexedDB)
+    - [ ] Synchronization Support (MutationQueue)
+- [x] Verification
+    - [x] Fix Build Permission Issues
+    - [x] Verify Build Success
